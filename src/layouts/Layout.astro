@@ -1,0 +1,97 @@
+---
+import './src/styles/global.css' 
+---
+
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+
+		<!-- SEO Básico -->
+        <title>AIDA · Librería Solidaria</title>
+        <meta
+            name="description"
+            content="Librería solidaria donde cada libro donado se convierte en ayuda directa para proyectos sociales y educativos."
+        />
+        <meta
+            name="keywords"
+            content="librería solidaria, AIDA, donaciones de libros, ONG, educación, cooperación, libros usados"
+        />
+        <meta name="author" content="AIDA Librería Solidaria" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://aidalibreria.org/" />
+
+		<!-- Favicon -->
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+
+		<!-- Open Graph (Facebook, LinkedIn...) -->
+        <meta property="og:title" content="AIDA · Librería Solidaria" />
+        <meta
+            property="og:description"
+            content="Dona libros. Transforma vidas. Cada compra apoya proyectos educativos en países en desarrollo."
+        />
+        <meta
+            property="og:image"
+            content="https://aidalibreria.org/og-image.jpg"
+        />
+        <meta property="og:url" content="https://aidalibreria.org/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content="es_ES" />
+
+        <!-- Twitter Card -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="AIDA · Librería Solidaria" />
+        <meta
+            name="twitter:description"
+            content="Libros con alma solidaria. Compra, dona y apoya la educación global."
+        />
+        <meta
+            name="twitter:image"
+            content="https://aidalibreria.org/og-image.jpg"
+        />
+        <meta name="twitter:site" content="@AIDAlibreria" />
+
+		<!-- Schema.org JSON-LD -->
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BookStore",
+                "name": "AIDA Librería Solidaria",
+                "url": "https://aidalibreria.org",
+                "image": "https://aidalibreria.org/logo.jpg",
+                "description": "Librería solidaria que financia proyectos educativos y sociales con la venta de libros donados.",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "Calle Ejemplo 123",
+                    "addressLocality": "Madrid",
+                    "addressRegion": "Madrid",
+                    "postalCode": "28000",
+                    "addressCountry": "ES"
+                },
+                "sameAs": [
+                    "https://facebook.com/aidalibreria",
+                    "https://instagram.com/aidalibreria"
+                ]
+            }
+        </script>
+
+        <!-- CSS -->
+        <!-- <link rel="stylesheet" type="text/css" href="./src/styles/style.css" /> -->
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+
+<style is:global>
+	@import "tailwindcss";
+	
+	html,
+	body {
+		margin: 0;
+		width: 100%;
+		scroll-behavior: smooth;
+        overflow-x: hidden;
+	}
+</style>

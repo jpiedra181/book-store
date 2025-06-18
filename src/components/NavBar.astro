@@ -1,0 +1,21 @@
+<section id="menu" class="w-screen sticky top-0">
+    <nav class="w-full h-15 text-[#4b301b] font-bold flex justify-center items-center">
+        <ul class="flex justify-center items-center list-none gap-8">
+            <li class="hover:text-[#966845]"><a href="#about">Sobre nosotros</a></li>
+            <li class="hover:text-[#966845]"><a href="#colaborate">Colabora</a></li>
+            <li class="hover:text-[#966845]"><a href="#activities">Actividades</a></li>
+            <li class="hover:text-[#966845]"><a href="#location">Dónde estamos</a></li>
+            <li class="hover:text-[#966845]"><a href="#contact">Contacto</a></li>
+        </ul>
+    </nav>
+</section>
+
+<script>
+    const navLinks = document.querySelectorAll('nav ul li')
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.forEach(item => item.classList.remove('text-orange-800', 'focus:bg-orange-800'));
+            link.classList.add('text-orange-800', 'focus:bg-orange-800');
+        });
+    });
+</script>
